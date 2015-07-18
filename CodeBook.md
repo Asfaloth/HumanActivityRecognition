@@ -113,7 +113,8 @@ Using `data` a second dataframe `data2` is constructed which contains the averag
 
 ### 3.The variables in the dataframes
 
-Both dataframes use the same variables.
+Both dataframes `data` and `data2` contain the same variables.
+Whereas `data` contains 10299 single records, `data2` contains the average of each of the 79 numerical variables for each activity and each subject.
 
 + **subject**  
     Factor with 30 levels representing the thirty test volunteers  
@@ -128,26 +129,24 @@ Both dataframes use the same variables.
     STANDING  
     LAYING  
 
-The remaining 79 variables contain numerical test data (mean/std indicates that there exists one variable for the mean and a different variable for the standard deviation of this quantity; X/Y/Z indicates that there exists three separate variables for the X, Y, and Z-direction describing the quantity)
+The remaining 79 variables contain numerical test data ('mean/std' indicates that there exists one variable for the mean and a different variable for the standard deviation of this quantity; 'XYZ' vindicates that there exists three separate variables for the X, Y, and Z-direction describing the quantity). All variables are normalized and bounded within [-1,1].
 
-- Features are normalized and bounded within [-1,1].
-
-+ **tBodyAcc-mean/std()-X/Y/Z**
-+ **tGravityAcc-mean/std()-X/Y/Z** 
-+ **tBodyAccJerk-mean/std()-X/Y/Z**
-+ **tBodyGyro-mean/std()-X/Y/Z**
-+ **tBodyGyroJerk-mean/std()-X/Y/Z**
++ **tBodyAcc-mean/std()-XYZ**
++ **tGravityAcc-mean/std()-XYZ** 
++ **tBodyAccJerk-mean/std()-XYZ**
++ **tBodyGyro-mean/std()-XYZ**
++ **tBodyGyroJerk-mean/std()-XYZ**
 + **tBodyAccMag-mean/std()**
 + **tGravityAccMag-mean/std()** 
 + **tBodyAccJerkMag-mean/std()**
 + **tBodyGyroMag-mean/std()** 
 + **tBodyGyroJerkMag-mean/std()**
-+ **fBodyAcc-mean/std()-X/Y/Z** 
-+ **fBodyAcc-meanFreq()-X/Y/Z**
-+ **fBodyAccJerk-mean/std()-X/Y/Z** 
-+ **fBodyAccJerk-meanFreq()-X/Y/Z**
-+ **fBodyGyro-mean/std()-X/Y/Z**
-+ **fBodyGyro-meanFreq()-X/Y/Z**
++ **fBodyAcc-mean/std()-XYZ** 
++ **fBodyAcc-meanFreq()-XYZ**
++ **fBodyAccJerk-mean/std()-XYZ** 
++ **fBodyAccJerk-meanFreq()-XYZ**
++ **fBodyGyro-mean/std()-XYZ**
++ **fBodyGyro-meanFreq()-XYZ**
 + **fBodyAccMag-mean()**
 + **fBodyAccMag-std()** 
 + **fBodyAccMag-meanFreq()**
@@ -158,5 +157,5 @@ The remaining 79 variables contain numerical test data (mean/std indicates that 
 + **fBodyBodyGyroJerkMag-mean/std()**
 + **fBodyBodyGyroJerkMag-meanFreq()**
 
-### 3. The script `run_analyis.R`
+### 4. The script `run_analyis.R`
 
