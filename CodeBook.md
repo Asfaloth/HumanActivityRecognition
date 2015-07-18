@@ -3,9 +3,9 @@
 
 The script `run_analyis.R` generates the two dataframes `data` and `data2` in the workspace of R (see the `README.md` for details) (`data2` also is stored in the `average_data.txt` in this repo). This code book contains information about 
 
-1. The experiment the data come from, 
-2. The way the original data are processed by `run_analysis.R` to obtain the dataframes `data` and `data2`
-3. The variables and the data in `data` and `data2`,
+1. The experiment the data come from. 
+2. The way the original data are processed by `run_analysis.R` to obtain the dataframes `data` and `data2`.
+3. The variables and the data in `data` and `data2`.
 
 ### 1. The Experiment and the original data
 
@@ -94,6 +94,7 @@ Of the data provided in the above zip archive the following files are used:
 + `UCI HAR Dataset/train/X_train.txt`: records of the train subjects
 + `UCI HAR Dataset/features.txt`: names of the feature labels
 + `UCI HAR Dataset/activity_labels.txt`: names of the activity labels
+
 These files are stored in dataframes by `run_analysis.R`.
 
 #### Extracting the variables describing mean and standard deviation
@@ -120,7 +121,7 @@ Whereas `data` contains 10299 single records, `data2` contains the average of ea
     Factor with 30 levels representing the thirty test volunteers  
     1-30 
 
-+ **activity** 
++ **activity**  
     Factor with 6 levels representing the activities performed by the subjects  
     WALKING  
     WALKING_UPSTAIRS  
