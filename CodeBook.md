@@ -23,15 +23,10 @@ The remaining 79 variables contain numerical test data (mean/std indicates that 
 + **tBodyAcc-mean/std()-X/Y/Z**
 + **tGravityAcc-mean/std()-X/Y/Z** 
 + **tBodyAccJerk-mean/std()-X/Y/Z**
-
 + **tBodyGyro-mean/std()-X/Y/Z**
-
 + **tBodyGyroJerk-mean/std()-X/Y/Z**
-
 + **tBodyAccMag-mean/std()**
-
 + **tGravityAccMag-mean/std()** 
-
 + **tBodyAccJerkMag-mean/std()**
 
 + **tBodyGyroMag-mean/std()** 
