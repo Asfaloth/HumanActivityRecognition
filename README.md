@@ -1,4 +1,5 @@
-# HumanActivityRecognition
-Coursera Getting and Cleaning Data Programming Assignment
+# HumanActivityRecognition - README
 
-how script works and how things connected
+### Coursera Getting and Cleaning Data Programming Assignment
+
+how script works and how things # connected
