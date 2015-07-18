@@ -14,7 +14,7 @@ The data sets described in the code book in this repo can be reproduced in the f
 + open an R console and access the same directory
 + execute the following in the R console (this may take some time!):   
       ```
-      source("./run_analysis.R")
+      source("run_analysis.R")
       ```
 
 After follwing these steps you will find the dataframes `data` and `data2` in your workspace. For a detailed description see the code book.
