@@ -11,7 +11,7 @@ The data sets described in the code book in this repo can be reproduced in the f
       https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 + unzip the data
 + download the run_analysis.R script from this repo into the same directory where the ????? directory of the original data is located
-+ open the R console and go to the same directory
++ open an R console and access the same directory
 + execute the following in your console (this may take some time!):   
       ```
       source("./run_analysis.R")
@@ -20,6 +20,6 @@ The data sets described in the code book in this repo can be reproduced in the f
 After follwing these steps you will find the dataframes 'data' and 'data2' in your workspace. For a detailed description see the code book.
 
 The file ??????? in this repo contains the data of the dataframe 'data2'. It can be reproduced by executing the following in your console (after loading the dataframe 'data2' described as above):  
-      ```
-      write.??????????????
-      ```
+            ```
+            write.??????????????
+            ```
