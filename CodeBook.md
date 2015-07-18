@@ -4,9 +4,8 @@
 The script `run_analyis.R` generates the two dataframes `data` and `data2` in the workspace of R (see the `README.md` for details) (`data2` also is stored in the `average_data.txt` in this repo). This code book contains information about 
 
 1. The experiment the data come from, 
-2. The way the original data are processed to obtain the dataframes `data` and `data2`
+2. The way the original data are processed by `run_analysis.R` to obtain the dataframes `data` and `data2`
 3. The variables and the data in `data` and `data2`,
-4. The functioning of the script `run_analyis.R`
 
 ### 1. The Experiment and the original data
 
@@ -83,6 +82,7 @@ Here are the most important informations about the experiment from the above web
 ### 2. Processing of the data
 
 The data described in 1. are processed by the script `run_analysis.R` contained in this repo.
+For details about the implementation see the `run_analysis.R` script itself which contains many comments.
 
 #### Which files are used
 Of the data provided in the above zip archive the following files are used:
@@ -156,6 +156,3 @@ The remaining 79 variables contain numerical test data ('mean/std' indicates tha
 + **fBodyBodyGyroMag-meanFreq()**
 + **fBodyBodyGyroJerkMag-mean/std()**
 + **fBodyBodyGyroJerkMag-meanFreq()**
-
-### 4. The script `run_analyis.R`
-
