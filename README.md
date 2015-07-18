@@ -10,9 +10,11 @@ The data sets described in the code book in this repo can be reproduced in the f
 + download the original data of the experiment:  
       https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 + unzip the data
-+ download the `run_analysis.R` script from this repo into the same directory which contains the `UCI HAR Dataset` directory of the unzipped original data
 + open an R console and access the same directory
-+ execute the following in the R console (this may take some time!):   
+
+Do one of the following:
++ Open `run_analysis.R` in this repo, copy its content and paste it to the R console (the execution of this may take some time).
++ Save the `run_analysis.R` script from this repo into the same directory which contains the `UCI HAR Dataset` directory of the unzipped original data (don't use the download function directly since it would create an html file; one can do this also by copy and paste). Then execute the following in your R console (this may take some time!):   
       ```
       source("run_analysis.R")
       ```
