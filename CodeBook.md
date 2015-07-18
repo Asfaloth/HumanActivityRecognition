@@ -80,9 +80,38 @@ Here are the most important informations about the experiment from the above web
 
 > The complete list of variables of each feature vector is available in `UCI HAR Dataset/features.txt`
 
+### 2. Processing of the data
 
+The data described in 1. are processed by the script `run_analysis.R` contained in this repo.
 
-### 2. The variables in the dataframes
+#### Which files are used
+Of the data provided in the above zip archive the following files are used:
++ `UCI HAR Dataset/test/subject_test.txt`: subject labels of the test subjects
++ `UCI HAR Dataset/test/y_test.txt`: activity labels of the test subjects
++ `UCI HAR Dataset/test/X_test.txt`: records of the test subjects
++ `UCI HAR Dataset/train/subject_train.txt`: subject labels of the train subjects
++ `UCI HAR Dataset/train/y_train.txt`: activity labels of the train subjects
++ `UCI HAR Dataset/train/X_train.txt`: records of the train subjects
++ `UCI HAR Dataset/features.txt`: names of the feature labels
++ `UCI HAR Dataset/activity_labels.txt`: names of the activity labels
+These files are stored in dataframes by `run_analysis.R`.
+
+#### Extracting the variables describing mean and standard deviation
+Of all 561 variables provided in the records only those 79 variables are kept which describe either means or standard deviations. Note that we also keep the variables of the type `meanFreq`. The other variables are removed from the dataframes.
+
+#### Putting the data together and providing descriptive names for the variables and the activity labels
++ The data of the test subjects and the train subjects are joined. 
++ The variable containing the subject lables is renamed to `subject`.
++ The variable containing the activity labels is renamed to `activity`.
++ The variables containing the records are renamed to the names provided in the `features.txt`.
++ These data are joined to one dataframe `data`.
++ The variable containig the subject lables is made into a factor with descriptive labels provided by `activity_lables.txt`.
++ The variable containing the subject lables is made into a factor.
+
+#### Averaging the data in view of test subjects and activities
+Using `data` a second dataframe `data2` is constructed which contains the average of each of the 79 variables for each activity and each subject.
+
+### 3.The variables in the dataframes
 
 Both dataframes use the same variables.
 
